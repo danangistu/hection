@@ -84,6 +84,18 @@ class MakeMenu
                 ->icon('users')
                 ->prependIcon();
 
+            $sliders = $menu->add($this->translate('slider.root'), '#')
+                ->icon('apple')
+                ->prependIcon();
+
+            $sliders->add($this->translate('slider.add'), ['route' => 'admin.slider.create'])
+                ->icon('circle-o')
+                ->prependIcon();
+
+            $sliders->add($this->translate('slider.all'), ['route' => 'admin.slider.index'])
+                ->icon('circle-o')
+                ->prependIcon();
+
             $users->add($this->translate('user.add'), ['route' => 'admin.user.create'])
                 ->icon($this->circle)
                 ->prependIcon();
@@ -95,6 +107,7 @@ class MakeMenu
             $menu->add($this->translate('setting'), ['route' => 'admin.setting.index'])
                 ->icon('gears')
                 ->prependIcon();
+
         });
     }
 

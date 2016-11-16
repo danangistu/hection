@@ -100,6 +100,14 @@ return [
             "language_id"           => "Language",
             "title"                 => "Title",
         ],
+
+        //put your array fields here
+        "slider" => [
+            "picture"               => "Picture",
+            "layer1"                => "Text 1",
+            "layer2"                => "Text 2",
+        ],
+
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
         "reset"                     => "Reset",
@@ -156,6 +164,13 @@ return [
             "all"                   => "All Pages",
             "root"                  => "Pages"
         ],
+        //put your menu array list here
+        "slider" => [
+            "add"                    => "Add a Slider",
+            "all"                    => "All Sliders",
+            "root"                   => "Sliders"
+        ],
+
         "setting"                   => "Settings",
         "user" => [
             "add"                   => "Add a User",
@@ -179,6 +194,15 @@ return [
         "show"                      => "Show page",
         "index"                     => "Pages"
     ],
+
+    //put your breadcumb arraylist here
+    "slider" => [
+        "create"                    => "Create Slider",
+        "edit"                      => "Edit Slider",
+        "index"                     => "Sliders",
+        "show"                     =>  "Show Sliders",
+    ],
+
     "profile"                       => "Profile",
     "root"                          => "Dashboard",
     "setting" => [

@@ -10,3 +10,4 @@ Route::resource('category', 'CategoryController');
 Route::resource('language', 'LanguageController');
 Route::resource('page', 'PageController');
 Route::resource('user', 'UserController');
+Route::resource('slider', 'SliderController');
