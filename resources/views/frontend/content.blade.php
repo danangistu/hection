@@ -64,7 +64,7 @@
   </section>
 
   <!-- SPEAKERS -->
-  <section id="speakers">
+  <section id="contest">
       <div class="container">
           <div class="row">
 
@@ -74,23 +74,22 @@
               </div>
 
               <ul id="list-speaker" class="list-unstyled">
-
-                  <!-- SPEAKER 1 -->
+                @foreach($contests as $contest)
                   <li class="col-lg-3 col-md-3 col-sm-4">
                       <div class="speaker">
                           <figure class="effect-ming">
-                              <img class="img-responsive" src="frontend/img/thumb6.png" alt=""/>
+                              <img class="img-responsive" src="{{ asset($contest->picture) }}" alt=""/>
                               <figcaption>
-                                  <span><a class="html-popup" href="contest.php?page=1"><img class="img-responsive" src="{{ asset('frontend/img/plus.png') }}" alt=""></a></span>
+                                  <span><a class="html-popup" href="{{ url('contest/'.$contest->id) }}"><img class="img-responsive" src="{{ asset('frontend/img/plus.png') }}" alt=""></a></span>
                               </figcaption>
                           </figure>
 
                           <div class="caption text-center">
-                              <h4>Stanley Willis</h4>
+                              <h4>{{ $contest->title }}</h4>
                           </div>
                       </div>
                   </li>
-
+                @endforeach
               </ul>
 
               <div class="col-lg-12 col-md-12 col-sm-12 text-center">

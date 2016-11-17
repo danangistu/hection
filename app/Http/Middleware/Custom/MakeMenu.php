@@ -32,54 +32,6 @@ class MakeMenu
                 ->icon('dashboard')
                 ->prependIcon();
 
-            // $language  = $menu->add($this->translate('language.root'), '#')
-            //     ->icon('flag')
-            //     ->prependIcon();
-            //
-            // $language->add($this->translate('language.add'), ['route' => 'admin.language.create'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-            //
-            // $language->add($this->translate('language.all'), ['route' => 'admin.language.index'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-
-            // $pages = $menu->add($this->translate('page.root'), '#')
-            //     ->icon('folder')
-            //     ->prependIcon();
-            //
-            // $pages->add($this->translate('page.add'), ['route' => 'admin.page.create'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-            //
-            // $pages->add($this->translate('page.all'), ['route' => 'admin.page.index'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-
-            // $categories = $menu->add($this->translate('category.root'), '#')
-            //     ->icon('book')
-            //     ->prependIcon();
-            //
-            // $categories->add($this->translate('category.add'), ['route' => 'admin.category.create'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-            //
-            // $categories->add($this->translate('category.all'), ['route' => 'admin.category.index'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-
-            // $articles = $menu->add($this->translate('article.root'), '#')
-            //     ->icon('edit')
-            //     ->prependIcon();
-            //
-            // $articles->add($this->translate('article.add'), ['route' => 'admin.article.create'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-            //
-            // $articles->add($this->translate('article.all'), ['route' => 'admin.article.index'])
-            //     ->icon($this->circle)
-            //     ->prependIcon();
-
             $sliders = $menu->add($this->translate('slider.root'), '#')
                 ->icon('picture-o')
                 ->prependIcon();
@@ -97,7 +49,7 @@ class MakeMenu
                 ->prependIcon();
 
             $contest = $menu->add($this->translate('contest.root'), '#')
-                ->icon('picture-o')
+                ->icon('certificate')
                 ->prependIcon();
 
             $contest->add($this->translate('contest.add'), ['route' => 'admin.contest.create'])

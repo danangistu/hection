@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="col-md-7 col-lg-7">
-                    <h2>Stanley<span>Willis</span></h2>
+                    <h2>{{ $request }}Stanley<span>Willis</span></h2>
                     <p class="lead">Executive Creative Director of <strong>Interdum Co.</strong></p>
                     <!-- <ul class="social list-inline list-unstyled">
                     	<li><a href=""><i class="fa fa-2x fa-facebook-square"></i></a></li>

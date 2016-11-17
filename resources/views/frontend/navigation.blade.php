@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="nav">
       <ul class="nav navbar-nav navbar-right uppercase">
         <li><a data-toggle="elementscroll" href="#info">About</a></li>
-        <li><a data-toggle="elementscroll" href="#speakers">Speakers</a></li>
+        <li><a data-toggle="elementscroll" href="#contest">Contests</a></li>
         <li><a data-toggle="elementscroll" href="#program">Program</a></li>
         <li><a data-toggle="elementscroll" href="#venue">Venue</a></li>
         <li><a data-toggle="elementscroll" href="#register">Register</a></li>

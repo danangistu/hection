@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Application;
 use App\Base\Controllers\ApplicationController;
 use App\Slider;
 use App\About;
+use App\Contest;
 class HomeController extends ApplicationController
 {
     /**
@@ -15,11 +16,13 @@ class HomeController extends ApplicationController
     public function index()
     {
         //$articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(5);
-        $sliders = Slider::orderBy('id')->get();
-        $about   = About::firstOrFail();
+        $sliders  = Slider::orderBy('id')->get();
+        $about    = About::firstOrFail();
+        $contests = Contest::orderBy('id')->get();
         return view('layouts.frontend', [
-          'sliders' => $sliders,
-          'about'   => $about
+          'sliders'   => $sliders,
+          'about'     => $about,
+          'contests'  => $contests
         ]);
     }
 }
