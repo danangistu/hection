@@ -44,60 +44,60 @@ class MakeMenu
             //     ->icon($this->circle)
             //     ->prependIcon();
 
-            $pages = $menu->add($this->translate('page.root'), '#')
-                ->icon('folder')
-                ->prependIcon();
+            // $pages = $menu->add($this->translate('page.root'), '#')
+            //     ->icon('folder')
+            //     ->prependIcon();
+            //
+            // $pages->add($this->translate('page.add'), ['route' => 'admin.page.create'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
+            //
+            // $pages->add($this->translate('page.all'), ['route' => 'admin.page.index'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
 
-            $pages->add($this->translate('page.add'), ['route' => 'admin.page.create'])
-                ->icon($this->circle)
-                ->prependIcon();
+            // $categories = $menu->add($this->translate('category.root'), '#')
+            //     ->icon('book')
+            //     ->prependIcon();
+            //
+            // $categories->add($this->translate('category.add'), ['route' => 'admin.category.create'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
+            //
+            // $categories->add($this->translate('category.all'), ['route' => 'admin.category.index'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
 
-            $pages->add($this->translate('page.all'), ['route' => 'admin.page.index'])
-                ->icon($this->circle)
-                ->prependIcon();
+            // $articles = $menu->add($this->translate('article.root'), '#')
+            //     ->icon('edit')
+            //     ->prependIcon();
+            //
+            // $articles->add($this->translate('article.add'), ['route' => 'admin.article.create'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
+            //
+            // $articles->add($this->translate('article.all'), ['route' => 'admin.article.index'])
+            //     ->icon($this->circle)
+            //     ->prependIcon();
 
-            $categories = $menu->add($this->translate('category.root'), '#')
-                ->icon('book')
-                ->prependIcon();
+            $sliders = $menu->add($this->translate('slider.root'), '#')
+            ->icon('picture-o')
+            ->prependIcon();
 
-            $categories->add($this->translate('category.add'), ['route' => 'admin.category.create'])
-                ->icon($this->circle)
-                ->prependIcon();
+            $sliders->add($this->translate('slider.add'), ['route' => 'admin.slider.create'])
+            ->icon('plus')
+            ->prependIcon();
 
-            $categories->add($this->translate('category.all'), ['route' => 'admin.category.index'])
-                ->icon($this->circle)
-                ->prependIcon();
-
-            $articles = $menu->add($this->translate('article.root'), '#')
-                ->icon('edit')
-                ->prependIcon();
-
-            $articles->add($this->translate('article.add'), ['route' => 'admin.article.create'])
-                ->icon($this->circle)
-                ->prependIcon();
-
-            $articles->add($this->translate('article.all'), ['route' => 'admin.article.index'])
-                ->icon($this->circle)
-                ->prependIcon();
+            $sliders->add($this->translate('slider.all'), ['route' => 'admin.slider.index'])
+            ->icon('circle-o')
+            ->prependIcon();
 
             $users = $menu->add($this->translate('user.root'), '#')
                 ->icon('users')
                 ->prependIcon();
 
-            $sliders = $menu->add($this->translate('slider.root'), '#')
-                ->icon('apple')
-                ->prependIcon();
-
-            $sliders->add($this->translate('slider.add'), ['route' => 'admin.slider.create'])
-                ->icon('circle-o')
-                ->prependIcon();
-
-            $sliders->add($this->translate('slider.all'), ['route' => 'admin.slider.index'])
-                ->icon('circle-o')
-                ->prependIcon();
-
             $users->add($this->translate('user.add'), ['route' => 'admin.user.create'])
-                ->icon($this->circle)
+                ->icon('plus')
                 ->prependIcon();
 
             $users->add($this->translate('user.all'), ['route' => 'admin.user.index'])

@@ -6,6 +6,7 @@ use App\Language;
 use App\Http\Controllers\Controller;
 use FormBuilder;
 use Laracasts\Flash\Flash;
+use File;
 
 abstract class AdminController extends Controller
 {
@@ -82,8 +83,10 @@ abstract class AdminController extends Controller
      */
     public function createFlashRedirect($class, $request, $imageColumn = false, $path = "index")
     {
+        //resize
         $model = $class::create($this->getData($request, $imageColumn));
         $model->id ? Flash::success(trans('admin.create.success')) : Flash::error(trans('admin.create.fail'));
+
         return $this->redirectRoutePath($path);
     }
 
@@ -98,8 +101,13 @@ abstract class AdminController extends Controller
      */
     public function saveFlashRedirect($model, $request, $imageColumn = false, $path = "index")
     {
+        //Delete Picture
+        $pic_name = $model->picture;
+        if (File::exists($pic_name)) File::delete($pic_name);
+
         $model->fill($this->getData($request, $imageColumn));
         $model->save() ? Flash::success(trans('admin.update.success')) : Flash::error(trans('admin.update.fail'));
+
         return $this->redirectRoutePath($path);
     }
 
@@ -115,6 +123,9 @@ abstract class AdminController extends Controller
         $model->delete() ?
             Flash::success(trans('admin.delete.success')) :
             Flash::error(trans('admin.delete.fail'));
+        //Delete Picture
+        $pic_name = $model->picture;
+        File::delete($pic_name);
         return $this->redirectRoutePath($path);
     }
 
@@ -202,7 +213,10 @@ abstract class AdminController extends Controller
     {
         $data = $request->except($field);
         if ($file = $request->file($field)) {
-            $fileName = rename_file($file->getClientOriginalName(), $file->getClientOriginalExtension());
+            //resize
+
+
+            $fileName = rename_file("HECTION_2017_".$file->getClientOriginalName(), $file->getClientOriginalExtension());
             $path = $this->getUploadPath($field);
             $file->move(public_path($path), $fileName);
             $data[$field] = $path . $fileName;

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Application;
 
 use App\Base\Controllers\ApplicationController;
-
+use App\Slider;
 class HomeController extends ApplicationController
 {
     /**
@@ -14,6 +14,9 @@ class HomeController extends ApplicationController
     public function index()
     {
         //$articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(5);
-        return view('layouts.frontend');
+        $sliders = Slider::orderBy('id')->get();
+        return view('layouts.frontend', [
+          'sliders' => $sliders
+        ]);
     }
 }

@@ -11,8 +11,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="_token" content="{{ csrf_token() }}" />
         <meta name="description" content="Hection">
-        <meta name="author" content="themecube">
-
+		    <meta property="og:type" content="website">
+		    <meta property="og:url" content="{{ Request::url() }}">
+		    <meta name="twitter:url" content="{{ Request::url() }}">
+		    <meta name="og:title" content="@yield('title')" >
+		    <meta name="twitter:title" content="@yield('title')">
+		    <meta name="description" property="og:description" content="@yield('description')">
+		    <meta name="twitter:description" content="@yield('description')">
         <!-- viewport settings -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 

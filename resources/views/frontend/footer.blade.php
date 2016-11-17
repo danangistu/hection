@@ -17,7 +17,7 @@
                     <li><a href="{{ Config::get('settings')->instagram }}"><i class="fa fa-lg fa-instagram"></i></a></li>
                   @endif
                   @if(!empty(Config::get('settings')->email))
-                    <li><a href="{{ Config::get('settings')->email }}"><i class="fa fa-lg fa-email"></i></a></li>
+                    <li><a href="mailto:{{ Config::get('settings')->email }}"><i class="fa fa-lg fa-envelope"></i></a></li>
                   @endif
                 </ul>
             </div>
