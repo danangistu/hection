@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Application;
 
 use App\Base\Controllers\ApplicationController;
 use App\Slider;
+use App\About;
 class HomeController extends ApplicationController
 {
     /**
@@ -15,8 +16,10 @@ class HomeController extends ApplicationController
     {
         //$articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(5);
         $sliders = Slider::orderBy('id')->get();
+        $about   = About::firstOrFail();
         return view('layouts.frontend', [
-          'sliders' => $sliders
+          'sliders' => $sliders,
+          'about'   => $about
         ]);
     }
 }

@@ -11,3 +11,6 @@ Route::resource('language', 'LanguageController');
 Route::resource('page', 'PageController');
 Route::resource('user', 'UserController');
 Route::resource('slider', 'SliderController');
+Route::get('about', ['as' => 'about.index', 'uses' => 'AboutController@getAbouts']);
+Route::patch('about/{about}', ['as' => 'about.update', 'uses' => 'AboutController@patchAbouts']);
+Route::resource('contest', 'ContestController');

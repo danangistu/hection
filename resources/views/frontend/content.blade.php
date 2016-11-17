@@ -4,8 +4,8 @@
         <div class="row">
 
             <div id="left" class="left col-lg-9 col-md-8 text-right">
-                <h2>Join the conference</h2>
-                  <p>Lorem ipsum dolor sit amet
+                <h2>Register Now</h2>
+                  <p>time left before big days</p>
               </div>
 
               <div id="right" class="col-lg-3 col-md-4 text-left">
@@ -22,29 +22,38 @@
           <div class="row">
 
               <div class="col-lg-12 text-center">
-                  <h1>#Eventr'15</h1>
-                  <p class="lead">Sed condimentum tempus auctor. Etiam euismod dapibus odio eu congue.<br>Maecenas eros lacus, tempus et pulvinar ac, commodo eget lacus. Curabitur ex non mi suscipit varius.<br>Phasellus ante lorem, sollicitudin quis erat sit amet, ultrices purus.</p>
+                  <h1>{{ $about->title }}</h1>
+                  <p class="lead"><?php echo $about->about ?></p>
               </div>
 
               <div class="col-lg-10 col-lg-offset-1 col-md-12 text-center">
                   <div class="row">
 
-                      <div class="feature col-lg-4 col-md-4 col-sm-4">
+                      <div class="feature col-lg-6 col-md-6 col-sm-6">
                           <i class="pe-4x pe-7s-refresh-2"></i>
-                          <h4>New Topics</h4>
-                          <p>Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.</p>
+                          <h4>{{ $about->pur_1 }}</h4>
+                          <p>{{ $about->pur_text_1 }}</p>
                       </div>
 
-                      <div class="feature col-lg-4 col-md-4 col-sm-4">
+                      <div class="feature col-lg-6 col-md-6 col-sm-6">
                           <i class="pe-4x pe-7s-micro"></i>
-                          <h4>2 Keynote Speakers</h4>
-                          <p>Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.</p>
+                          <h4>{{ $about->pur_2 }}</h4>
+                          <p>{{ $about->pur_text_2 }}</p>
                       </div>
 
-                      <div class="feature col-lg-4 col-md-4 col-sm-4">
+                  </div>
+                  <div class="row">
+
+                      <div class="feature col-lg-6 col-md-6 col-sm-6">
                           <i class="pe-4x pe-7s-headphones"></i>
-                          <h4>Multilingual Support</h4>
-                          <p>Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.</p>
+                          <h4>{{ $about->pur_3 }}</h4>
+                          <p>{{ $about->pur_text_3 }}</p>
+                      </div>
+
+                      <div class="feature col-lg-6 col-md-6 col-sm-6">
+                          <i class="pe-4x pe-7s-headphones"></i>
+                          <h4>{{ $about->pur_4 }}</h4>
+                          <p>{{ $about->pur_text_4 }}</p>
                       </div>
 
                   </div>
@@ -60,8 +69,8 @@
           <div class="row">
 
               <div class="col-lg-12">
-                  <h2 class="uppercase">speakers</h2>
-                  <p class="lead">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p>
+                  <h2 class="uppercase">Contest</h2>
+                  <p class="lead">Here list of the contest</p>
               </div>
 
               <ul id="list-speaker" class="list-unstyled">
@@ -70,134 +79,14 @@
                   <li class="col-lg-3 col-md-3 col-sm-4">
                       <div class="speaker">
                           <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker1.png" alt=""/>
+                              <img class="img-responsive" src="frontend/img/thumb6.png" alt=""/>
                               <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
+                                  <span><a class="html-popup" href="contest.php?page=1"><img class="img-responsive" src="{{ asset('frontend/img/plus.png') }}" alt=""></a></span>
                               </figcaption>
                           </figure>
 
                           <div class="caption text-center">
                               <h4>Stanley Willis</h4>
-                              <p class="company">Fermentum Co.</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 2 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker2.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Jane Richards</h4>
-                              <p class="company">Hipmunk</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 3 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker3.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Martin Pearson</h4>
-                              <p class="company">Kitten Co.</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 4 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker4.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Jessica Green</h4>
-                              <p class="company">Magna</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 5 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker5.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Herman Russell</h4>
-                              <p class="company">Zenquoace</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 6 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker6.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Joan Graves</h4>
-                              <p class="company">Howtech</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 7 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker7.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Peter Reid</h4>
-                              <p class="company">Ventolax</p>
-                          </div>
-                      </div>
-                  </li>
-
-                  <!-- SPEAKER 8 -->
-                  <li class="col-lg-3 col-md-3 col-sm-4">
-                      <div class="speaker">
-                          <figure class="effect-ming">
-                              <img class="img-responsive" src="img/speaker8.png" alt=""/>
-                              <figcaption>
-                                  <span><a class="html-popup" href="speaker-detail.html"><img class="img-responsive" src="img/plus.png" alt=""></a></span>
-                              </figcaption>
-                          </figure>
-
-                          <div class="caption text-center">
-                              <h4>Tracey Curtis</h4>
-                              <p class="company">Zathmedia</p>
                           </div>
                       </div>
                   </li>

@@ -60,8 +60,11 @@ class RouteServiceProvider extends ServiceProvider
         });
         Route::model('setting', Setting::class);
         Route::model('user', User::class);
-        
+
         Route::model('slider', \App\Slider::class);
+        Route::model('about', \App\About::class);
+        Route::model('contest', \App\Contest::class);
+
     }
 
     /**

@@ -81,16 +81,32 @@ class MakeMenu
             //     ->prependIcon();
 
             $sliders = $menu->add($this->translate('slider.root'), '#')
-            ->icon('picture-o')
-            ->prependIcon();
+                ->icon('picture-o')
+                ->prependIcon();
 
             $sliders->add($this->translate('slider.add'), ['route' => 'admin.slider.create'])
-            ->icon('plus')
-            ->prependIcon();
+                ->icon('plus')
+                ->prependIcon();
 
             $sliders->add($this->translate('slider.all'), ['route' => 'admin.slider.index'])
-            ->icon('circle-o')
-            ->prependIcon();
+                ->icon('circle-o')
+                ->prependIcon();
+
+            $menu->add($this->translate('about'), ['route' => 'admin.about.index'])
+                ->icon('info-circle')
+                ->prependIcon();
+
+            $contest = $menu->add($this->translate('contest.root'), '#')
+                ->icon('picture-o')
+                ->prependIcon();
+
+            $contest->add($this->translate('contest.add'), ['route' => 'admin.contest.create'])
+                ->icon('plus')
+                ->prependIcon();
+
+            $contest->add($this->translate('contest.all'), ['route' => 'admin.contest.index'])
+                ->icon('circle-o')
+                ->prependIcon();
 
             $users = $menu->add($this->translate('user.root'), '#')
                 ->icon('users')

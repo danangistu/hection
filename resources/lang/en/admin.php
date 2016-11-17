@@ -107,6 +107,24 @@ return [
             "layer1"                => "Text 1",
             "layer2"                => "Text 2",
         ],
+        "about" => [
+            "title"                 => "Title",
+            "about"                 => "About",
+            "pur_1"                 => "Purpose 1",
+            "pur_text_1"            => "Purpose Text 1",
+            "pur_2"                 => "Purpose 2",
+            "pur_text_2"            => "Purpose Text 2",
+            "pur_3"                 => "Purpose 3",
+            "pur_text_3"            => "Purpose Text 3",
+            "pur_4"                 => "Purpose 4",
+            "pur_text_4"            => "Purpose Text 4",
+        ],
+        "contest" => [
+            "title"                 => "Title",
+            "sub_title"             => "Sub Title",
+            "content"               => "Content",
+            "picture"               => "Picture",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -170,6 +188,12 @@ return [
             "all"                    => "All Sliders",
             "root"                   => "Sliders"
         ],
+        "about"                     => "About",
+        "contest" => [
+            "add"                    => "Add a Contest",
+            "all"                    => "All Contest",
+            "root"                   => "Contest"
+        ],
 
         "setting"                   => "Settings",
         "user" => [
@@ -201,6 +225,15 @@ return [
         "edit"                      => "Edit Slider",
         "index"                     => "Sliders",
         "show"                     =>  "Show Sliders",
+    ],
+    "about" => [
+        "index"                     => "About",
+    ],
+    "contest" => [
+        "create"                    => "Create Contest",
+        "edit"                      => "Edit Contest",
+        "index"                     => "Contests",
+        "show"                     =>  "Show Contests",
     ],
 
     "profile"                       => "Profile",

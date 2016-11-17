@@ -4,8 +4,8 @@
       <div class="row">
 
             <div class="col-lg-3 col-md-3 col-sm-6">
-              <h4 class="uppercase">eventr'15</h4>
-                <p class="small">Vestibulum in ultrices justo. Praesent placerat justo metus, vitae malesuada lacus eleifend vel. Vivamus viverra volutpat leo, a gravida dolor posuere congue.</p>
+              <h4 class="uppercase">{{ $about->title }}</h4>
+                <p class="small"><?php echo substr($about->about,0,200) ?></p>
                 <ul class="list-unstyled list-inline uppercase">
                   @if(!empty(Config::get('settings')->facebook))
                     <li><a href="{{ Config::get('settings')->facebook }}"><i class="fa fa-lg fa-facebook"></i></a></li>
