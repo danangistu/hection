@@ -968,7 +968,7 @@
                   <div class="row">
 
                       <div class="col-lg-4 col-md-4 col-sm-3">
-                          <img class="img-responsive" src="img/download.png" alt="">
+                          <img class="img-responsive" src="frontend/img/download.png" alt="">
                       </div>
 
                       <div class="col-lg-8 col-md-8 col-sm-9">
@@ -1155,73 +1155,13 @@
 
             <div class="col-lg-12">
                 <h2 class="uppercase text-center">register</h2>
-                  <p class="lead text-center">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p>
-              </div>
+                <p class="lead text-center">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p>
+            </div>
 
-              <div class="col-lg-12">
-                  <!-- PRICE TABLES -->
-                  <div id="price-carousel">
 
-                      <div class="price-table early-bird">
-                          <div class="icon">
-                              <i class="pe-5x pe-7s-wristwatch"></i>
-                          </div>
-
-                          <div class="table-header">
-                              <h3>Early Bird</h3>
-                              <p class="price">$150</p>
-                          </div>
-
-                          <ul class="desc list-unstyled">
-                              <li>Conference Kit</li>
-                              <li>Coffee break</li>
-                              <li>Lunch</li>
-                              <li>All seasons</li>
-                          </ul>
-                      </div>
-
-                      <div class="price-table standart">
-                          <div class="icon">
-                              <i class="pe-5x pe-va pe-7s-ribbon"></i>
-                          </div>
-
-                          <div class="table-header">
-                              <h3>Standart</h3>
-                              <p class="price">$175</p>
-                          </div>
-
-                          <ul class="desc list-unstyled">
-                              <li>Conference Kit</li>
-                              <li>Coffee break</li>
-                              <li>Lunch</li>
-                              <li>All seasons</li>
-                          </ul>
-                      </div>
-
-                      <div class="price-table vip">
-                          <div class="icon">
-                              <i class="pe-5x pe-va pe-7s-diamond"></i>
-                          </div>
-
-                          <div class="table-header">
-                              <h3>Exclusive</h3>
-                              <p class="price">$250</p>
-                          </div>
-
-                          <ul class="desc list-unstyled">
-                              <li>Conference Kit</li>
-                              <li>Coffee break</li>
-                              <li>Lunch</li>
-                              <li>All seasons</li>
-                          </ul>
-                      </div>
-
-                  </div>
-              </div>
-
-    <div class="col-lg-12 text-center">
-                <a class="button button-small button-line-dark html-popup" href="register.html">register now</a>
-              </div>
+            <div class="col-lg-12 text-center">
+              <a class="button button-small button-line-dark html-popup" href="register.html">register now</a>
+            </div>
 
           </div>
       </div>
