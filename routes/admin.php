@@ -14,3 +14,5 @@ Route::resource('slider', 'SliderController');
 Route::get('about', ['as' => 'about.index', 'uses' => 'AboutController@getAbouts']);
 Route::patch('about/{about}', ['as' => 'about.update', 'uses' => 'AboutController@patchAbouts']);
 Route::resource('contest', 'ContestController');
+Route::resource('day', 'DayController');
+Route::resource('program', 'ProgramController');

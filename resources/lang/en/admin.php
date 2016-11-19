@@ -125,6 +125,19 @@ return [
             "content"               => "Content",
             "picture"               => "Picture",
         ],
+        "day" => [
+            "day"                   => "Day",
+        ],
+        "program" => [
+            "day_id"                => "Day",
+            "day"                   => "Day",
+            "time"                  => "Time",
+            "program"               => "Program",
+            "description"           => "Description",
+            "duration"              => "Duration",
+            "location"              => "location",
+            "place"                 => "Place"
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -187,7 +200,9 @@ return [
             "root"                   => "CMS",
             "slider"                 => "Sliders",
             "about"                  => "About",
-            "contest"                => "Contests"
+            "contest"                => "Contests",
+            "day"                    => "Days",
+            "program"                => "Programs"
         ],
 
         "setting"                   => "Settings",
@@ -229,6 +244,18 @@ return [
         "edit"                      => "Edit Contest",
         "index"                     => "Contests",
         "show"                     =>  "Show Contests",
+    ],
+    "day" => [
+        "create"                    => "Create Day",
+        "edit"                      => "Edit Day",
+        "index"                     => "Days",
+        "show"                     =>  "Show Days",
+    ],
+    "program" => [
+        "create"                    => "Create Program",
+        "edit"                      => "Edit Program",
+        "index"                     => "Programs",
+        "show"                     =>  "Show Programs",
     ],
 
     "profile"                       => "Profile",
