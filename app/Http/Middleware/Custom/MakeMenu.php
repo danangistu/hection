@@ -31,33 +31,20 @@ class MakeMenu
             $menu->add($this->translate('dashboard'), ['route' => 'admin.root'])
                 ->icon('dashboard')
                 ->prependIcon();
+            $cms = $menu->add($this->translate('cms.root'), '#')
+                ->icon('circle-o')
+                ->prependIcon();
 
-            $sliders = $menu->add($this->translate('slider.root'), '#')
+            $cms->add($this->translate('cms.slider'), ['route' => 'admin.slider.index'])
                 ->icon('picture-o')
                 ->prependIcon();
 
-            $sliders->add($this->translate('slider.add'), ['route' => 'admin.slider.create'])
-                ->icon('plus')
-                ->prependIcon();
-
-            $sliders->add($this->translate('slider.all'), ['route' => 'admin.slider.index'])
-                ->icon('circle-o')
-                ->prependIcon();
-
-            $menu->add($this->translate('about'), ['route' => 'admin.about.index'])
+            $cms->add($this->translate('cms.about'), ['route' => 'admin.about.index'])
                 ->icon('info-circle')
                 ->prependIcon();
 
-            $contest = $menu->add($this->translate('contest.root'), '#')
+            $cms->add($this->translate('cms.contest'), ['route' => 'admin.contest.index'])
                 ->icon('certificate')
-                ->prependIcon();
-
-            $contest->add($this->translate('contest.add'), ['route' => 'admin.contest.create'])
-                ->icon('plus')
-                ->prependIcon();
-
-            $contest->add($this->translate('contest.all'), ['route' => 'admin.contest.index'])
-                ->icon('circle-o')
                 ->prependIcon();
 
             $users = $menu->add($this->translate('user.root'), '#')

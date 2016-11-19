@@ -183,16 +183,11 @@ return [
             "root"                  => "Pages"
         ],
         //put your menu array list here
-        "slider" => [
-            "add"                    => "Add a Slider",
-            "all"                    => "All Sliders",
-            "root"                   => "Sliders"
-        ],
-        "about"                     => "About",
-        "contest" => [
-            "add"                    => "Add a Contest",
-            "all"                    => "All Contest",
-            "root"                   => "Contest"
+        "cms" => [
+            "root"                   => "CMS",
+            "slider"                 => "Sliders",
+            "about"                  => "About",
+            "contest"                => "Contests"
         ],
 
         "setting"                   => "Settings",
