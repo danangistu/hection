@@ -106,6 +106,7 @@ return [
             "picture"               => "Picture",
             "layer1"                => "Text 1",
             "layer2"                => "Text 2",
+            "picform"               => "Picture (1920 x 1080)",
         ],
         "about" => [
             "title"                 => "Title",
@@ -124,6 +125,7 @@ return [
             "sub_title"             => "Sub Title",
             "content"               => "Content",
             "picture"               => "Picture",
+            "picform"               => "Picture (350 x 350)",
         ],
         "day" => [
             "day"                   => "Day",
@@ -140,8 +142,16 @@ return [
         ],
         "sponsor" => [
             "picture"               => "Picture",
+            "picform"               => "Picture (200 x 100)",
             "name"                  => "Sponsor Name",
             "link"                  => "URL (Link)",
+        ],
+        "testimonial" => [
+            "picture"               => "Picture",
+            "testimonial"           => "Testimonial",
+            "name"                  => "Name",
+            "role"                  => "Role",
+            "picform"               => "Picture (100 x 100)",
         ],
 
         "published_at"              => "Published at",
@@ -208,7 +218,8 @@ return [
             "contest"                => "Contests",
             "day"                    => "Days",
             "program"                => "Programs",
-            "sponsor"                => "Sponsors"
+            "sponsor"                => "Sponsors",
+            "testimonial"            => "Testimonial"
         ],
 
         "setting"                   => "Settings",
@@ -268,6 +279,12 @@ return [
         "edit"                      => "Edit Sponsor",
         "index"                     => "Sponsors",
         "show"                     =>  "Show Sponsors",
+    ],
+    "testimonial" => [
+        "create"                    => "Create Testimonial",
+        "edit"                      => "Edit Testimonial",
+        "index"                     => "Testimonials",
+        "show"                     =>  "Show Testimonials",
     ],
 
     "profile"                       => "Profile",

@@ -16,7 +16,7 @@ class ContestsForm extends AdminForm
               'label' => trans('admin.fields.contest.sub_title')
           ])
           ->add('picture', 'file', [
-              'label' => trans('admin.fields.contest.picture'),
+              'label' => trans('admin.fields.contest.picform'),
               'attr' => ['class' => '']
           ])
           ->add('content', 'textarea', [

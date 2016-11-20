@@ -54,6 +54,9 @@ class MakeMenu
                 $cms->add($this->translate('cms.program'), ['route' => 'admin.program.index'])
                     ->icon('asterisk')
                     ->prependIcon();
+                $cms->add($this->translate('cms.testimonial'), ['route' => 'admin.testimonial.index'])
+                    ->icon('exchange')
+                    ->prependIcon();
                 $cms->add($this->translate('cms.sponsor'), ['route' => 'admin.sponsor.index'])
                     ->icon('star')
                     ->prependIcon();

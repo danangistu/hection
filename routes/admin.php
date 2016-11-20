@@ -17,3 +17,4 @@ Route::resource('contest', 'ContestController');
 Route::resource('day', 'DayController');
 Route::resource('program', 'ProgramController');
 Route::resource('sponsor', 'SponsorController');
+Route::resource('testimonial', 'TestimonialController');

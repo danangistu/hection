@@ -8,6 +8,7 @@ use App\About;
 use App\Contest;
 use App\Day;
 use App\Sponsor;
+use App\Testimonial;
 class HomeController extends ApplicationController
 {
     /**
@@ -23,11 +24,13 @@ class HomeController extends ApplicationController
         $contests = Contest::orderBy('id')->get();
         $days     = Day::orderBy('id')->get();
         $sponsors     = Sponsor::orderBy('id')->get();
+        $testimonials     = Testimonial::orderBy('id')->get();
         return view('layouts.frontend', [
           'sliders'   => $sliders,
           'about'     => $about,
           'contests'  => $contests,
           'days'      => $days,
+          'testimonials'=> $testimonials,
           'sponsors'  => $sponsors
         ]);
     }

@@ -13,7 +13,7 @@ class SponsorsForm extends AdminForm
               'label' => trans('admin.fields.sponsor.name')
           ])
           ->add('picture', 'file', [
-            'label' => trans('admin.fields.sponsor.picture'),
+            'label' => trans('admin.fields.sponsor.picform'),
             'attr' => ['class' => '']
           ])
           ->add('link', 'text', [

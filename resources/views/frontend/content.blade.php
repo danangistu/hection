@@ -526,23 +526,13 @@
                       <h2 class="hidden">testimonial</h2>
 
                       <div id="testimonial-carousel">
+                        @foreach($testimonials as $testimonial)
                           <div class="item">
-                              <img class="img-circle" src="img/testimonial1.png" alt="">
-                              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies.Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                              <p class="name">Todd Stone</p>
+                              <img class="img-circle" src="{{ asset($testimonial->picture) }}" alt="">
+                              <p class="lead"><?php echo $testimonial->testimonial; ?></p>
+                              <p class="name"><big>{{ $testimonial->name }}</big> - <small>{{ $testimonial->role }}</small></p>
                           </div>
-
-                          <div class="item">
-                              <img class="img-circle" src="img/testimonial2.png" alt="">
-                              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                              <p class="name">Minnie Pierce</p>
-                          </div>
-
-                          <div class="item">
-                              <img class="img-circle" src="img/testimonial3.png" alt="">
-                              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                              <p class="name">Lena Kim</p>
-                          </div>
+                        @endforeach
                       </div>
                    </div>
               </div>

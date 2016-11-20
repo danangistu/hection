@@ -249,7 +249,7 @@ jQuery(document).ready(function($) {
 	var map = new google.maps.Map(document.getElementById('gmap_canvas'), options);
 
 	// Define Marker properties
-	var image = new google.maps.MarkerImage('img/map-logo.png',
+	var image = new google.maps.MarkerImage('frontend/img/map-logo.png',
 		// This marker is 129 pixels wide by 42 pixels tall.
 		new google.maps.Size(125, 75),
 		// The origin for this image is 0,0.

@@ -10,7 +10,7 @@ class SlidersForm extends AdminForm
     {
       $this
           ->add('picture', 'file', [
-              'label' => trans('admin.fields.slider.picture'),
+              'label' => trans('admin.fields.slider.picform'),
               'attr' => ['class' => '']
           ])
           ->add('layer1', 'textarea', [
