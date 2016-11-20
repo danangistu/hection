@@ -52,7 +52,10 @@ class MakeMenu
                     ->icon('diamond')
                     ->prependIcon();
                 $cms->add($this->translate('cms.program'), ['route' => 'admin.program.index'])
-                    ->icon('diamond')
+                    ->icon('asterisk')
+                    ->prependIcon();
+                $cms->add($this->translate('cms.sponsor'), ['route' => 'admin.sponsor.index'])
+                    ->icon('star')
                     ->prependIcon();
 
             $users = $menu->add($this->translate('user.root'), '#')

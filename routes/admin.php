@@ -16,3 +16,4 @@ Route::patch('about/{about}', ['as' => 'about.update', 'uses' => 'AboutControlle
 Route::resource('contest', 'ContestController');
 Route::resource('day', 'DayController');
 Route::resource('program', 'ProgramController');
+Route::resource('sponsor', 'SponsorController');

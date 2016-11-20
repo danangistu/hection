@@ -66,6 +66,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::model('contest', \App\Contest::class);
         Route::model('day', \App\Day::class);
         Route::model('program', \App\Program::class);
+        Route::model('sponsor', \App\Sponsor::class);
 
     }
 

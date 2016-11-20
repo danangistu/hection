@@ -138,6 +138,11 @@ return [
             "location"              => "location",
             "place"                 => "Place"
         ],
+        "sponsor" => [
+            "picture"               => "Picture",
+            "name"                  => "Sponsor Name",
+            "link"                  => "URL (Link)",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -202,7 +207,8 @@ return [
             "about"                  => "About",
             "contest"                => "Contests",
             "day"                    => "Days",
-            "program"                => "Programs"
+            "program"                => "Programs",
+            "sponsor"                => "Sponsors"
         ],
 
         "setting"                   => "Settings",
@@ -256,6 +262,12 @@ return [
         "edit"                      => "Edit Program",
         "index"                     => "Programs",
         "show"                     =>  "Show Programs",
+    ],
+    "sponsor" => [
+        "create"                    => "Create Sponsor",
+        "edit"                      => "Edit Sponsor",
+        "index"                     => "Sponsors",
+        "show"                     =>  "Show Sponsors",
     ],
 
     "profile"                       => "Profile",
