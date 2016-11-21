@@ -153,6 +153,11 @@ return [
             "role"                  => "Role",
             "picform"               => "Picture (100 x 100)",
         ],
+        "gallery" => [
+            "picture"               => "Picture",
+            "title"                 => "Title",
+            "description"           => "Description",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -219,7 +224,8 @@ return [
             "day"                    => "Days",
             "program"                => "Programs",
             "sponsor"                => "Sponsors",
-            "testimonial"            => "Testimonial"
+            "testimonial"            => "Testimonial",
+            "gallery"                => "Gallery"
         ],
 
         "setting"                   => "Settings",
@@ -285,6 +291,12 @@ return [
         "edit"                      => "Edit Testimonial",
         "index"                     => "Testimonials",
         "show"                     =>  "Show Testimonials",
+    ],
+    "gallery" => [
+        "create"                    => "Create Gallery",
+        "edit"                      => "Edit Gallery",
+        "index"                     => "Galleries",
+        "show"                      =>  "Show Galleries",
     ],
 
     "profile"                       => "Profile",

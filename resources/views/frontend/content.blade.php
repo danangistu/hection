@@ -396,119 +396,15 @@
                   <p class="lead">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p>
 
                   <div id="timeline" data-columns>
+                    @foreach($galleries as $gallery)
                       <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb1.png" alt="">
+                          <img class="img-responsive" src="{{ asset($gallery->picture) }}" alt="">
                           <div class="overlay"></div>
                           <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
+                              <a class="image-popup" href="{{ asset($gallery->picture) }}" title="<h4>{{ $gallery->title }}</h4>{{ $gallery->description }}"><i class="pe-3x pe-7s-plus"></i></a>
                           </div>
                       </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb2.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb3.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb4.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb5.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb6.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb7.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb8.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb9.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb10.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb11.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb12.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb13.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-                      <div class="item wrap">
-                          <img class="img-responsive" src="img/thumb14.png" alt="">
-                          <div class="overlay"></div>
-                          <div class="icon">
-                              <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a>
-                          </div>
-                      </div>
-
-
+                    @endforeach
                   </div>
               </div>
 
