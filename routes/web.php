@@ -17,3 +17,4 @@ Route::get('page/{page_slug}', ['as' => 'page', 'uses' => 'PageController@index'
 Route::get('category/{category_slug}', ['as' => 'category', 'uses' => 'CategoryController@index']);
 Route::post('language/change', ['as' => 'app.language.change' , 'uses' => 'LanguageController@postChange']);
 Route::get('contest/{id}','ContestController@viewContest');
+Route::resource('register','RegisterController');

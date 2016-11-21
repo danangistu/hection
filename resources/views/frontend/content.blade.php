@@ -379,7 +379,7 @@
 
 
             <div class="col-lg-12 text-center">
-              <a class="button button-small button-line-dark html-popup" href="register.html">register now</a>
+              <a class="button button-small button-line-dark html-popup" href="{{ url('register') }}">register now</a>
             </div>
 
           </div>
