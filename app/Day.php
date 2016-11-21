@@ -8,7 +8,7 @@ class Day extends Model
 {
   protected $fillable = ['id','day'];
 
-  public function sliders()
+  public function days()
   {
       return $this->hasMany(Day::class);
   }

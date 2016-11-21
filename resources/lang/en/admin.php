@@ -158,6 +158,9 @@ return [
             "title"                 => "Title",
             "description"           => "Description",
         ],
+        "role" => [
+            "role"                  => "Role",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -233,6 +236,11 @@ return [
             "add"                   => "Add a User",
             "all"                   => "All Users",
             "root"                  => "Users"
+        ],
+        "role" => [
+            "add"                   => "Add a Role",
+            "all"                   => "All Roles",
+            "root"                  => "Roles"
         ]
     ],
     "ops" => [
@@ -241,7 +249,7 @@ return [
         "delete"                    => "Delete",
         "edit"                      => "Edit",
         "modified"                  => "Modified on",
-        "name"                      => "Ops",
+        "name"                      => "Action",
         "order"                     => "Order",
         "show"                      => "Show"
     ],
@@ -297,6 +305,12 @@ return [
         "edit"                      => "Edit Gallery",
         "index"                     => "Galleries",
         "show"                      =>  "Show Galleries",
+    ],
+    "role" => [
+        "create"                    => "Create Role",
+        "edit"                      => "Edit Role",
+        "index"                     => "Roles",
+        "show"                      =>  "Show Roles",
     ],
 
     "profile"                       => "Profile",

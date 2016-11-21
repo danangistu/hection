@@ -76,6 +76,18 @@ class MakeMenu
                     ->icon($this->circle)
                     ->prependIcon();
 
+          $role = $menu->add($this->translate('role.root'), '#')
+              ->icon('lock')
+              ->prependIcon();
+
+              $role->add($this->translate('role.add'), ['route' => 'admin.role.create'])
+                  ->icon('plus')
+                  ->prependIcon();
+
+              $role->add($this->translate('role.all'), ['route' => 'admin.role.index'])
+                  ->icon($this->circle)
+                  ->prependIcon();
+
             $menu->add($this->translate('setting'), ['route' => 'admin.setting.index'])
                 ->icon('gears')
                 ->prependIcon();
