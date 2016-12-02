@@ -1,3 +1,8 @@
+@extends('layouts.frontend')
+@section('slider')
+  @include('frontend.slider')
+@endsection
+@section('content')
 <!-- HIGHLIGHT -->
   <section id="highlight">
     <div class="container-fluid">
@@ -91,11 +96,11 @@
                   </li>
                 @endforeach
               </ul>
-
+              @if($count_contest > 4)
               <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                 <a id="loadmore" class="button button-small button-line-dark">load more</a>
               </div>
-
+              @endif
           </div>
       </div>
   </section>
@@ -216,7 +221,7 @@
                         <h2 class="uppercase">venue</h2>
                           <p class="lead">Donec finibus porta ultricies.<br>Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
                       <h4>Recrea Hotel on Broadway</h4>
-                          <img class="img-responsive" src="img/hotel-logo.png" alt="hotel">
+                          <img class="img-responsive" src="frontend/img/hotel-logo.png" alt="hotel">
                       </div>
 
                       <div class="col-lg-4 col-md-4 col-sm-4">
@@ -238,75 +243,26 @@
           <div class="row">
 
               <div class="col-lg-3 col-md-3">
-                <h3>Accomodation  Alternatives</h3>
-                  <p>Quisque ut dui eget nibh ultrices pulvinar sit amet ut lectus.</p>
+                <h3>Our Last Event Winner</h3>
+                  <p>Here are the winners of Hection 2016</p>
               </div>
 
               <div class="col-lg-9 col-md-9">
 
                   <!-- hotel carousel -->
                   <div id="hotel-carousel">
+                    @foreach($winners as $winner)
                       <div class="item">
                         <div class="hotel">
-                            <img class="img-responsive" src="img/hotel-img1.png" alt="">
-
+                            <img class="img-responsive" src="{{ asset($winner->picture) }}" alt="">
                               <div class="caption">
-                                <h5 class="uppercase">Magna Resort</h5>
-                                  <span class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </span>
-
-                                  <p class="small">Pellentesque habitant morbi tristique et<br>netus et malesuada fames ac turpis egestas.</p>
-                                  <a class="button button-xsmall button-line-dark" href="#">details</a>
+                                <h5 class="uppercase">{{ $winner->school }}</h5>
+                                  <p class="small">{{ $winner->title }}</p>
+                                  <a class="button button-xsmall button-line-dark html-popup" href="{{ url('winner/'.$winner->id) }}">details</a>
                               </div>
-
                           </div>
                       </div>
-
-                      <div class="item">
-                        <div class="hotel">
-                            <img class="img-responsive" src="img/hotel-img2.png" alt="">
-
-                              <div class="caption">
-                                <h5 class="uppercase">Quisque Plaza</h5>
-                                  <span class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </span>
-
-                                  <p class="small">Proin nibh augue eget massa vel<br>semper imperdiet integer vitae orci mauris.</p>
-                                  <a class="button button-xsmall button-line-dark" href="#">details</a>
-                              </div>
-
-                          </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="hotel">
-                            <img class="img-responsive" src="img/hotel-img3.png" alt="">
-
-                              <div class="caption">
-                                <h5 class="uppercase">convallis</h5>
-                                  <span class="rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </span>
-
-                                  <p class="small">Pellentesque habitant tristique senectus<br>et netus et malesuada fames ac turpis egestas.</p>
-                                  <a class="button button-xsmall button-line-dark" href="#">details</a>
-                              </div>
-
-                          </div>
-                      </div>
+                    @endforeach
                   </div>
 
               </div>
@@ -460,3 +416,4 @@
 
   <!-- google map -->
 <div id="gmap_canvas"></div>
+@endsection

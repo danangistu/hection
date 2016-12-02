@@ -161,6 +161,13 @@ return [
         "role" => [
             "role"                  => "Role",
         ],
+        "winner" => [
+            "picture"               => "Picture",
+            "picform"               => "Picture (405 x 250)",
+            "school"                => "School Name",
+            "title"                 => "Title",
+            "description"           => "Description",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -228,7 +235,8 @@ return [
             "program"                => "Programs",
             "sponsor"                => "Sponsors",
             "testimonial"            => "Testimonial",
-            "gallery"                => "Gallery"
+            "gallery"                => "Gallery",
+            "winner"                 => "Winner",
         ],
 
         "setting"                   => "Settings",
@@ -311,6 +319,12 @@ return [
         "edit"                      => "Edit Role",
         "index"                     => "Roles",
         "show"                      =>  "Show Roles",
+    ],
+    "winner" => [
+        "create"                    => "Create Winner",
+        "edit"                      => "Edit Winner",
+        "index"                     => "Winners",
+        "show"                     =>  "Show Winners",
     ],
 
     "profile"                       => "Profile",

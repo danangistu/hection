@@ -8,7 +8,7 @@ use App\Role;
 class roleDataTable extends DataTableController
 {
     protected $model = Role::class;
-    protected $columns = ['id','role'];
+    protected $columns = ['role'];
 
     protected $common_columns = ['created_at', 'updated_at'];
 
