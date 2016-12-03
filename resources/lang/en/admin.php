@@ -168,6 +168,11 @@ return [
             "title"                 => "Title",
             "description"           => "Description",
         ],
+        "prize" => [
+            "picture"               => "Picture",
+            "title"                 => "Title",
+            "description"           => "Description",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -237,6 +242,7 @@ return [
             "testimonial"            => "Testimonial",
             "gallery"                => "Gallery",
             "winner"                 => "Winner",
+            "prize"                  => "Prize",
         ],
 
         "setting"                   => "Settings",
@@ -324,7 +330,10 @@ return [
         "create"                    => "Create Winner",
         "edit"                      => "Edit Winner",
         "index"                     => "Winners",
-        "show"                     =>  "Show Winners",
+        "show"                      =>  "Show Winners",
+    ],
+    "prize" => [
+        "index"                     => "Prizes",
     ],
 
     "profile"                       => "Profile",

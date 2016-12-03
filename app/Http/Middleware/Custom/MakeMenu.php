@@ -35,19 +35,15 @@ class MakeMenu
             $cms = $menu->add($this->translate('cms.root'), '#')
                 ->icon('circle-o')
                 ->prependIcon();
-
                 $cms->add($this->translate('cms.slider'), ['route' => 'admin.slider.index'])
                     ->icon('picture-o')
                     ->prependIcon();
-
                 $cms->add($this->translate('cms.about'), ['route' => 'admin.about.index'])
                     ->icon('info-circle')
                     ->prependIcon();
-
                 $cms->add($this->translate('cms.contest'), ['route' => 'admin.contest.index'])
                     ->icon('certificate')
                     ->prependIcon();
-
                 $cms->add($this->translate('cms.day'), ['route' => 'admin.day.index'])
                     ->icon('diamond')
                     ->prependIcon();
@@ -60,6 +56,9 @@ class MakeMenu
                 $cms->add($this->translate('cms.winner'), ['route' => 'admin.winner.index'])
                     ->icon('trophy')
                     ->prependIcon();
+                $cms->add($this->translate('cms.prize'), ['route' => 'admin.prize.index'])
+                    ->icon('trophy')
+                    ->prependIcon();
                 $cms->add($this->translate('cms.testimonial'), ['route' => 'admin.testimonial.index'])
                     ->icon('exchange')
                     ->prependIcon();
@@ -70,11 +69,9 @@ class MakeMenu
             $users = $menu->add($this->translate('user.root'), '#')
                 ->icon('users')
                 ->prependIcon();
-
                 $users->add($this->translate('user.add'), ['route' => 'admin.user.create'])
                     ->icon('plus')
                     ->prependIcon();
-
                 $users->add($this->translate('user.all'), ['route' => 'admin.user.index'])
                     ->icon($this->circle)
                     ->prependIcon();
@@ -82,11 +79,9 @@ class MakeMenu
           $role = $menu->add($this->translate('role.root'), '#')
               ->icon('lock')
               ->prependIcon();
-
               $role->add($this->translate('role.add'), ['route' => 'admin.role.create'])
                   ->icon('plus')
                   ->prependIcon();
-
               $role->add($this->translate('role.all'), ['route' => 'admin.role.index'])
                   ->icon($this->circle)
                   ->prependIcon();
