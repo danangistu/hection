@@ -57,7 +57,10 @@ class MakeMenu
                     ->icon('trophy')
                     ->prependIcon();
                 $cms->add($this->translate('cms.prize'), ['route' => 'admin.prize.index'])
-                    ->icon('trophy')
+                    ->icon('star')
+                    ->prependIcon();
+                $cms->add($this->translate('cms.venue'), ['route' => 'admin.venue.index'])
+                    ->icon('ticket')
                     ->prependIcon();
                 $cms->add($this->translate('cms.testimonial'), ['route' => 'admin.testimonial.index'])
                     ->icon('exchange')

@@ -173,6 +173,12 @@ return [
             "title"                 => "Title",
             "description"           => "Description",
         ],
+        "venue" => [
+            "picture"               => "Picture",
+            "place"                 => "Place",
+            "address"               => "Address",
+            "description"           => "Description",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -243,6 +249,7 @@ return [
             "gallery"                => "Gallery",
             "winner"                 => "Winner",
             "prize"                  => "Prize",
+            "venue"                  => "Venue",
         ],
 
         "setting"                   => "Settings",
@@ -333,7 +340,10 @@ return [
         "show"                      =>  "Show Winners",
     ],
     "prize" => [
-        "index"                     => "Prizes",
+        "index"                     => "Prize",
+    ],
+    "venue" => [
+        "index"                     => "Venue",
     ],
 
     "profile"                       => "Profile",

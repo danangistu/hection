@@ -21,5 +21,7 @@ Route::resource('sponsor', 'SponsorController');
 Route::resource('winner', 'WinnerController');
 Route::get('prize', ['as' => 'prize.index', 'uses' => 'PrizeController@getPrizes']);
 Route::patch('prize/{prize}', ['as' => 'prize.update', 'uses' => 'PrizeController@patchPrizes']);
+Route::get('venue', ['as' => 'venue.index', 'uses' => 'VenueController@getVenues']);
+Route::patch('venue/{venue}', ['as' => 'venue.update', 'uses' => 'VenueController@patchVenues']);
 Route::resource('testimonial', 'TestimonialController');
 Route::resource('gallery', 'GalleryController');

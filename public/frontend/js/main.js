@@ -234,7 +234,7 @@ jQuery(document).ready(function($) {
 	//GOOGLE MAPS
 
 	// Creating a LatLng object containing the coordinate for the center of the map
-	var latlng = new google.maps.LatLng(40.801485408197856, -73.96745953467104);
+	var latlng = new google.maps.LatLng(-7.054689999999989, 110.43499999999995);
 
 	// Creating an object literal containing the properties we want to pass to the map
 	var options = {
@@ -272,7 +272,7 @@ jQuery(document).ready(function($) {
 
 	// Add information window
 	var infowindow1 = new google.maps.InfoWindow({
-		content:  createInfo('Eventr', '1571 Hidden Terrace,<br />New York, NY, 13247,<br />(917) 600-4570<br /><br />')
+		content:  createInfo('Politeknik Negeri Semarang', 'Jl. Prof. H. Soedarto, S.H., Tembalang,<br /> Semarang, Jawa Tengah<br />50275<br />Indonesia<br />')
 	});
 
 	// Create information window
@@ -310,7 +310,7 @@ var contact_send = function(){
 	var phone = $("#phone").val();
 	var type  = $("#type").val();
 
-		 if ( name=="" ){ alert("name area is empty!"); $("#name").focus(); }
+  if ( name=="" ){ alert("name area is empty!"); $("#name").focus(); }
 	else if ( email=="" ){ alert("email address area is empty!"); $("#email").focus(); }
 	else if ( phone=="" ){ alert("phone number area is empty!"); $("#phone").focus(); }
 	else if ( type=="" ){ alert("register type isn't selected!"); $("#type").focus(); }

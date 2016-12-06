@@ -11,6 +11,8 @@ use App\Sponsor;
 use App\Winner;
 use App\Testimonial;
 use App\Gallery;
+use App\Prize;
+use App\Venue;
 class HomeController extends ApplicationController
 {
     /**
@@ -23,6 +25,8 @@ class HomeController extends ApplicationController
         //$articles = session('current_lang')->articles()->published()->orderBy('published_at', 'desc')->paginate(5);
         $sliders        = Slider::orderBy('id')->get();
         $about          = About::firstOrFail();
+        $prize          = Prize::firstOrFail();
+        $venue          = Venue::firstOrFail();
         $contests       = Contest::orderBy('id')->get();
         $count_contest  = Contest::count();
         $days           = Day::orderBy('id')->get();
@@ -39,7 +43,9 @@ class HomeController extends ApplicationController
           'testimonials'  => $testimonials,
           'sponsors'      => $sponsors,
           'winners'       => $winners,
-          'galleries'     => $galleries
+          'galleries'     => $galleries,
+          'prize'         => $prize,
+          'venue'         => $venue
         ]);
     }
 }

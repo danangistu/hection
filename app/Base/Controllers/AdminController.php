@@ -83,7 +83,6 @@ abstract class AdminController extends Controller
      */
     public function createFlashRedirect($class, $request, $imageColumn = false, $path = "index")
     {
-        //resize
         $model = $class::create($this->getData($request, $imageColumn));
         $model->id ? Flash::success(trans('admin.create.success')) : Flash::error(trans('admin.create.fail'));
 
@@ -213,9 +212,6 @@ abstract class AdminController extends Controller
     {
         $data = $request->except($field);
         if ($file = $request->file($field)) {
-            //resize
-
-
             $fileName = rename_file("HECTION_2017_".$file->getClientOriginalName(), $file->getClientOriginalExtension());
             $path = $this->getUploadPath($field);
             $file->move(public_path($path), $fileName);

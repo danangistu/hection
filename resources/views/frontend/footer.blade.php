@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <p class="small">Pellentesque laoreet leo ut suscipit feugiat. Sed ultricies convallis nunc quis malesuada.</p>
+                <p class="small">Get latest information about this event, subscribe now.</p>
 
             </div>
 
