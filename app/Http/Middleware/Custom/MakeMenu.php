@@ -69,6 +69,16 @@ class MakeMenu
                     ->icon('star')
                     ->prependIcon();
 
+            $newsletter = $menu->add($this->translate('newsletter.root'), '#')
+                ->icon('envelope')
+                ->prependIcon();
+                $newsletter->add($this->translate('newsletter.add'), ['route' => 'admin.newsletter.create'])
+                    ->icon('plus')
+                    ->prependIcon();
+                $newsletter->add($this->translate('newsletter.all'), ['route' => 'admin.newsletter.index'])
+                    ->icon($this->circle)
+                    ->prependIcon();
+
             $users = $menu->add($this->translate('user.root'), '#')
                 ->icon('users')
                 ->prependIcon();

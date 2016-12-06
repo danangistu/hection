@@ -179,6 +179,9 @@ return [
             "address"               => "Address",
             "description"           => "Description",
         ],
+        "newsletter" => [
+            "email"                 => "Email",
+        ],
 
         "published_at"              => "Published at",
         "read_count"                => "Read Count",
@@ -250,6 +253,11 @@ return [
             "winner"                 => "Winner",
             "prize"                  => "Prize",
             "venue"                  => "Venue",
+        ],
+        "newsletter" => [
+            "add"                   => "Add a Newsletter",
+            "all"                   => "All Newsletters",
+            "root"                  => "Newsletters"
         ],
 
         "setting"                   => "Settings",
@@ -344,6 +352,12 @@ return [
     ],
     "venue" => [
         "index"                     => "Venue",
+    ],
+    "newsletter" => [
+        "create"                    => "Create Newsletter",
+        "edit"                      => "Edit Newsletter",
+        "index"                     => "Newsletters",
+        "show"                     =>  "Show Newsletters",
     ],
 
     "profile"                       => "Profile",

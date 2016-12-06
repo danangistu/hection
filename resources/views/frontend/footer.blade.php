@@ -28,6 +28,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <input type="email" id="newsletter_email">
+                        <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}">
                     </div>
                     <div class="col-lg-4">
                         <button class="button button-big button-line-light" onclick="newsletter_send();">subscribe</button>

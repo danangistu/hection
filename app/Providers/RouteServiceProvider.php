@@ -73,6 +73,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::model('winner', \App\Winner::class);
         Route::model('prize', \App\Prize::class);
         Route::model('venue', \App\Venue::class);
+        Route::model('newsletter', \App\Newsletter::class);
     }
 
     /**

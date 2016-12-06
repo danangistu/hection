@@ -19,3 +19,4 @@ Route::post('language/change', ['as' => 'app.language.change' , 'uses' => 'Langu
 Route::get('contest/{id}','ContestController@viewContest');
 Route::get('winner/{id}','WinnerController@viewWinner');
 Route::resource('register','RegisterController');
+Route::resource('newsletter','NewsletterController');

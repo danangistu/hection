@@ -25,3 +25,4 @@ Route::get('venue', ['as' => 'venue.index', 'uses' => 'VenueController@getVenues
 Route::patch('venue/{venue}', ['as' => 'venue.update', 'uses' => 'VenueController@patchVenues']);
 Route::resource('testimonial', 'TestimonialController');
 Route::resource('gallery', 'GalleryController');
+Route::resource('newsletter', 'NewsletterController');

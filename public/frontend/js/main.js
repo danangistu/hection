@@ -336,11 +336,11 @@ var contact_send = function(){
 	var newsletter_send = function(){
 
 		'use strict';
-
-		var email 	= $("#newsletter_email").val();
+    var email 	= $("#newsletter_email").val();
+		var token 	= $("#_token").val();
 		if ( email=="" ){ alert("Your email address is empty!"); $("#newsletter_email").focus(); }
 		else {
-			$.post("newsletter.send.php", { email:email }, function( result ){
+			$.post("newsletter", { email:email, _token:token }, function( result ){
 
 				console.log( result );
 
