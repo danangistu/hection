@@ -259,6 +259,7 @@ return [
             "all"                   => "All Newsletters",
             "root"                  => "Newsletters"
         ],
+        "mail" =>["root"=>"Email"],
 
         "setting"                   => "Settings",
         "user" => [

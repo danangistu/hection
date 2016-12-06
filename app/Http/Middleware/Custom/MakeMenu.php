@@ -70,7 +70,7 @@ class MakeMenu
                     ->prependIcon();
 
             $newsletter = $menu->add($this->translate('newsletter.root'), '#')
-                ->icon('envelope')
+                ->icon('inbox')
                 ->prependIcon();
                 $newsletter->add($this->translate('newsletter.add'), ['route' => 'admin.newsletter.create'])
                     ->icon('plus')
@@ -78,6 +78,10 @@ class MakeMenu
                 $newsletter->add($this->translate('newsletter.all'), ['route' => 'admin.newsletter.index'])
                     ->icon($this->circle)
                     ->prependIcon();
+
+            $newsletter = $menu->add($this->translate('mail.root'), 'https://webmail.idhostinger.com')
+                ->icon('envelope')
+                ->prependIcon();
 
             $users = $menu->add($this->translate('user.root'), '#')
                 ->icon('users')
