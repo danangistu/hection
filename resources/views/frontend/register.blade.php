@@ -24,24 +24,17 @@
                         </div>
                     </div>
 
-                    <div class="control-group">
-                        <div class="controls ">
-                            <label for="phone">PHONE</label><br>
-                            <input type="text" name="phone" id="phone" required data-validation-required-message="Please enter your phone" />
-                        </div>
-                    </div>
-
 										<div class="control-group">
                         <div class="controls ">
-                            <label for="phone">PASSWORD</label><br>
+                            <label for="password">PASSWORD</label><br>
                             <input type="password" name="password" id="password" required data-validation-required-message="Please enter your password" />
                         </div>
                     </div>
 
 										<div class="control-group">
                         <div class="controls ">
-                            <label for="phone">RE-PASSWORD</label><br>
-                            <input type="password" name="password" id="password" required data-validation-required-message="Please enter your password" />
+                            <label for="password">RE-PASSWORD</label><br>
+                            <input type="password" name="password2" id="password2" required data-validation-required-message="Please enter your re-password" />
                         </div>
                     </div>
 

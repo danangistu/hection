@@ -305,29 +305,31 @@ var contact_send = function(){
 
 	'use strict';
 
-	var name  = $("#name").val();
-	var email = $("#email").val();
-	var phone = $("#phone").val();
-	var type  = $("#type").val();
+	var name      = $("#name").val();
+	var email     = $("#email").val();
+	var password  = $("#password").val();
+	var password2 = $("#password2").val();
 
   if ( name=="" ){ alert("name area is empty!"); $("#name").focus(); }
 	else if ( email=="" ){ alert("email address area is empty!"); $("#email").focus(); }
-	else if ( phone=="" ){ alert("phone number area is empty!"); $("#phone").focus(); }
-	else if ( type=="" ){ alert("register type isn't selected!"); $("#type").focus(); }
+	else if ( password=="" ){ alert("password area is empty!"); $("#password").focus(); }
+	else if ( password2=="" ){ alert("re-password area is empty!"); $("#password2").focus(); }
 	else {
-		$.post("contact.send.php", { name:name, email:email, phone:phone, type:type }, function( result ){
-			if ( result=="SUCCESS" ){
-				alert("Your contact form is sent.");
-				setTimeout(function(){
-					$("#name").val("");
-					$("#email").val("");
-					$("#phone").val("");
-					$("#type").val("");
-				}, 3000);
-			} else {
-				alert("Your contact form isn't sent. Please check fields and try again.");
-			}
-		});
+    if (password == password2){
+      $.post("contact.send.php", { name:name, email:email, password:password}, function( result ){
+        if ( result=="SUCCESS" ){
+          alert("Your contact form is sent.");
+          setTimeout(function(){
+            $("#name").val("");
+            $("#email").val("");
+            $("#password").val("");
+            $("#password2").val("");
+          }, 3000);
+        } else {
+          alert("Your contact form isn't sent. Please check fields and try again.");
+        }
+      });
+    }else { alert("password does not match, please correct input password!"); $("#password2").focus(); }
 	}
 
 };
